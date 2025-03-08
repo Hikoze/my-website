@@ -42,7 +42,7 @@ nav {
 .nav-logo {
     height: 50px; /* Atur ukuran */
     width: auto;
-    top: 10px;
+    margin-left: auto;
 }
 
 .nav-item {
