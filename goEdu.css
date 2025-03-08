@@ -77,6 +77,16 @@ nav {
 }
 
  /* Media query agar responsif */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.5rem; /* Kecilkan font di layar kecil */
+    }
+    
+    .hero-text {
+        font-size: 0.9rem;
+    }
+}
+
 
 @media (min-width: 768px) {
     .card {
