@@ -38,6 +38,8 @@ nav {
 
 .logo-container {
     margin-left: auto; /* Mendorong logo ke ujung kanan */
+    position: relative;
+    top: 10px;
 }
 
 .nav-logo {
