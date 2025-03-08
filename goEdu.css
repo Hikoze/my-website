@@ -35,6 +35,12 @@ nav {
     padding: 0;
 }
 
+.nav-logo {
+    height: 50px; /* Sesuaikan ukuran */
+    width: auto;
+    margin-left: auto; /* Mendorong ke kanan */
+}
+
 .nav-item {
     color: #8e8e8e;
     padding: 15px 20px; /* Membuat spasi lebih baik */
