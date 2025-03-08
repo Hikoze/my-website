@@ -35,10 +35,13 @@ nav {
     padding: 0;
 }
 
+.logo-container {
+    margin-left: auto; /* Mendorong logo ke ujung kanan */
+}
+
 .nav-logo {
-    height: 50px; /* Sesuaikan ukuran */
+    height: 50px; /* Atur ukuran */
     width: auto;
-    margin-left: auto; /* Mendorong ke kanan */
 }
 
 .nav-item {
