@@ -37,10 +37,12 @@ nav {
 
 .logo-container {
     margin-left: auto; /* Mendorong logo ke ujung kanan */
+    position: relative;
+    top: 5px; /* Geser ke bawah */
 }
 
 .nav-logo {
-    height: 20px; /* Atur ukuran */
+    height: 50px; /* Atur ukuran */
     width: auto;
     margin-left: auto;
 }
