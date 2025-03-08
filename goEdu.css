@@ -30,9 +30,15 @@ nav {
 }
 
 .hero-container {
+.parent-container {
+    display: flex;
+    justify-content: flex-start; /* Pastikan elemen anak berada di kiri */
+}
+
+.hero-container {
     text-align: left; /* Teks di sebelah kiri */
     max-width: 800px; /* Batasi lebar agar tidak terlalu melebar */
-    margin: 100px auto 0 auto; /* Pusatkan secara horizontal dan beri jarak dari navbar */
+    margin: 100px 0 0 0; /* Reset margin kanan dan kiri */
     padding: 20px;
 }
 
@@ -40,14 +46,12 @@ nav {
     font-size: 2rem;
     font-weight: bold;
     color: #333;
-    text-align: left; /* Pastikan judul juga di sebelah kiri */
 }
 
 .hero-text {
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
-    text-align: left; /* Pastikan teks juga di sebelah kiri */
 }
 
 
