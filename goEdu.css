@@ -43,7 +43,6 @@ nav {
 .nav-logo {
     height: 70px; /* Atur ukuran */
     width: auto;
-    margin-left: auto;
     position: relative;
     right: 40px;
 }
