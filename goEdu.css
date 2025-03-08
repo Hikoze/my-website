@@ -32,7 +32,7 @@ nav {
 .hero-container {
     text-align: center; /* Pusatkan teks */
     max-width: 800px; /* Batasi lebar agar tidak terlalu melebar */
-    margin: 100px auto 0 auto; /* Pusatkan secara horizontal dan beri jarak dari navbar */
+    margin: 10px auto 0 auto; /* Pusatkan secara horizontal dan beri jarak dari navbar */
     padding: 20px;
 }
 
