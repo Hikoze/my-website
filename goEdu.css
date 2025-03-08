@@ -66,6 +66,12 @@ nav {
 }
 
  /* Media query agar responsif */
+@media (max-width: 768px) {
+    .nav-logo {
+        height: 40px; /* Mengecilkan logo */
+    }
+}
+
 @media (min-width: 768px) {
     .card {
         width: calc(50% - 20px);
