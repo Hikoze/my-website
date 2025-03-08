@@ -75,7 +75,7 @@ nav {
 @media (max-width: 768px) {
     .nav-logo {
         height: 50px; /* Jangan terlalu kecil */
-        margin-right: 10px;
+        margin-right: 2px;
     }
 }
 
