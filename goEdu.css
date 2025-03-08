@@ -8,8 +8,8 @@
 body {
     display: flex;
     min-height: 100vh;
-    align-items: relative;
-    justify-content: center;
+    align-items: center;
+    justify-content: relative;
     background: linear-gradient(to bottom, #FFFFFF, #D7EBFF);
 }
 
