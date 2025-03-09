@@ -8,25 +8,9 @@
 body {
     display: flex;
     min-height: 100vh;
-    align-items: center;
-    justify-content: center;
+    align-items: relative;
+    justify-content: relative;
     background: linear-gradient(to bottom, #FFFFFF, #D7EBFF);
-}
-
-nav {
-    display: flex;
-    position: fixed; /* Menempel di bagian atas */
-    top: 0;
-    left: 0;
-    width: 100%; /* Lebar penuh */
-    height: 40px;
-    background: #fff;
-    border-radius: 0; /* Menghilangkan border radius agar panjang penuh */
-    padding: 10px 0; /* Memberi sedikit ruang agar tidak terlalu rapat */
-    justify-content: relative; /* Posisi item tetap di tengah */
-    background: linear-gradient(to bottom, #FFFFFF, #D7EBFF);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
-    z-index: 1000; /* Supaya navbar selalu di atas elemen lain */
 }
 
 .parent-container {
@@ -53,11 +37,27 @@ nav {
     line-height: 1.6;
 }
 
+nav {
+    display: flex;
+    position: fixed; /* Menempel di bagian atas */
+    top: 0;
+    left: 0;
+    width: 100%; /* Lebar penuh */
+    height: 40px;
+    background: #fff;
+    border-radius: 0; /* Menghilangkan border radius agar panjang penuh */
+    padding: 10px 0; /* Memberi sedikit ruang agar tidak terlalu rapat */
+    justify-content: relative; /* Posisi item tetap di tengah */
+    background: linear-gradient(to bottom, #FFFFFF, #D7EBFF);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    z-index: 1000; /* Supaya navbar selalu di atas elemen lain */
+}
 
 .nav-list {
     list-style: none;
     display: flex;
     padding: 0;
+    margin-left: 30px;
 }
 
 .nav-item {
@@ -82,17 +82,6 @@ nav {
 }
 
  /* Media query agar responsif */
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 1.5rem; /* Kecilkan font di layar kecil */
-    }
-    
-    .hero-text {
-        font-size: 0.9rem;
-    }
-}
-
-
 @media (min-width: 768px) {
     .card {
         width: calc(50% - 20px);
