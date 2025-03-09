@@ -27,6 +27,7 @@ body {
 .parent-container {
     display: flex;
     justify-content: flex-start; /* Pastikan elemen anak berada di kiri */
+    z-index: 600;
 }
 
 .hero-container {
