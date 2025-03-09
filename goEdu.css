@@ -22,6 +22,7 @@ body {
   border-radius: 20px;
   background: rgba(255, 255, 255,);
   backdrop-filter: blur(10px);
+    z-index: 500;
 }
 
 .parent-container {
