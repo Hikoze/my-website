@@ -29,7 +29,6 @@ nav {
     z-index: 1000; /* Supaya navbar selalu di atas elemen lain */
 }
 
-.hero-container {
 .parent-container {
     display: flex;
     justify-content: flex-start; /* Pastikan elemen anak berada di kiri */
