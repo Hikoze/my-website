@@ -12,6 +12,17 @@ body {
     justify-content: relative;
     background: linear-gradient(to bottom, #FFFFFF, #D7EBFF);
 }
+.glassmorph {
+  margin-top: 50px;
+  margin-left: 12px;
+  position: fixed;
+  width: 96%;
+  height: 200px;
+  border: 0.5px solid rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  background: rgba(255, 255, 255,);
+  backdrop-filter: blur(10px);
+}
 
 .parent-container {
     display: flex;
