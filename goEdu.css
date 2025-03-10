@@ -34,8 +34,8 @@ body {
 .hero-container {
     text-align: left; /* Teks di sebelah kiri */
     max-width: 800px; /* Batasi lebar agar tidak terlalu melebar */
-    margin: 30px 0 0 0; /* Reset margin kanan dan kiri */
-    padding: 20px;
+    margin: 33px 0 0 0; /* Reset margin kanan dan kiri */
+    padding: 25px;
 }
 
 .hero-title {
