@@ -12,6 +12,29 @@ body {
     justify-content: relative;
     background: linear-gradient(to bottom, #FFFFFF, #D7EBFF);
 }
+
+.logo-container {
+  display: flex;
+  position: relative;
+  align-content: left;
+  justify-content: left;
+  
+  margin-top: 5px;
+  bottom: 94%;
+  margin-left: -28px;
+}
+
+.nav-logo {
+  width: 45px;
+  height: 45px;
+  max-width: 50px;
+}
+.overlay{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 100px;
+}
 .glassmorph {
   margin-top: 50px;
   margin-left: 12px;
