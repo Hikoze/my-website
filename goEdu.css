@@ -41,6 +41,7 @@ body {
 .hero-title {
     font-size: 2rem;
     font-weight: bold;
+    font-family: 'Inter', Arial, sans-serif;
     color: #333;
 }
 
