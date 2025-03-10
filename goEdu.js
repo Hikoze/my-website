@@ -3,12 +3,12 @@ const items = document.querySelectorAll('.nav-item');
 
 const handleIndicator = (element) => {
   items.forEach(item => {
-    item.classlist.remove('active');
+    item.classList.remove('active');
     item.removeAttribute('style');
   })
   
   indicator.style.width = `$(element.offsetWidth)px`;
-  indicator.style.Left = `$(element.offsetWidth)px`;
+  indicator.style.left = `$(element.offsetWidth)px`;
   indicator.style.backgroundColor = element.getAttribute('active-color');
   
   element.classList.add('active');
