@@ -18,3 +18,4 @@ items.forEach((item, index) => {
   item.addEventListener('click', (e) => {handleIndicator(e.target)});
   item.classList.contains('active') && handleIndicator(item);
 });
+//*DISCLAIMER: WE DO NOT CLAIM ALL OF OUR FEATURES, NAVBAR CREDITS BELONGS TO "How To Dev" ON YT. 
