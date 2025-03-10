@@ -99,7 +99,7 @@ nav {
 
 .nav-item {
     color: #8e8e8e;
-    padding: 15px 20px; /* Membuat spasi lebih baik */
+    padding: 15px 15px; /* Membuat spasi lebih baik */
     text-decoration: none;
     transition: 0.3s;
     font-weight: 500;
