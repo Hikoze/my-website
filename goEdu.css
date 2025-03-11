@@ -7,6 +7,8 @@
 
 body {
     display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
     min-height: 100vh;
     align-items: relative;
     justify-content: relative;
@@ -38,7 +40,7 @@ body {
 .glassmorph {
   margin-top: 50px;
   margin-left: 12px;
-  position: fixed;
+  position: absolute;
   width: 96%;
   height: 200px;
   border: 0.5px solid rgba(0, 0, 0, 1);
@@ -50,22 +52,22 @@ body {
 
 .parent-container {
     display: flex;
-    justify-content: flex-start; /* Pastikan elemen anak berada di kiri */
+    justify-content: center; /* Pastikan elemen anak berada di kiri */
     z-index: 600;
 }
 
 .hero-container {
-    text-align: center;
-    max-width: 800px; /* Batasi lebar agar tidak terlalu melebar */
+    text-align: center; /* Teks di sebelah kiri */
+    max-width: 700px; /* Batasi lebar agar tidak terlalu melebar */
     margin: 33px 0 0 0; /* Reset margin kanan dan kiri */
     padding: 25px;
 }
 
 .hero-title {
     font-size: 2rem;
-    font-weight: bold;
     font-family: 'Inter', Arial, sans-serif;
-    color: #333;
+    font-weight: bold;
+    color: #000000;
 }
 
 .hero-text {
@@ -99,12 +101,13 @@ nav {
 
 .nav-item {
     color: #8e8e8e;
-    padding: 15px 15px; /* Membuat spasi lebih baik */
+    padding: 15px 30px; /* Membuat spasi lebih baik */
     text-decoration: none;
     transition: 0.3s;
     font-weight: 500;
     position: relative;
     z-index: 1;
+    
 }
 
 .indicator {
