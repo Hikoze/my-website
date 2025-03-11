@@ -140,8 +140,8 @@ const handleIndicator = (element) => {
         item.removeAttribute('style');
     });
 
-    indicator.style.width = `${element.offsetWidth}px`;
-    indicator.style.left = `${element.offsetLeft}px`;
+    indicator.style.width = `$(element.offsetWidth)px`;
+    indicator.style.left = `$(element.offsetLeft)px`;
     indicator.style.backgroundColor = element.getAttribute('active-color');
 
     element.classList.add('active');
