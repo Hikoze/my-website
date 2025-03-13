@@ -257,7 +257,47 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+introduction-container {
+  text-align: center; /* Teks di sebelah kiri */
+    max-width: 700px; /* Batasi lebar agar tidak terlalu melebar */
+    margin: 4px 0 0 0; /* Reset margin kanan dan kiri */
+    padding: 25px;
+}
 
+.introduction-title {
+  font-size: 2rem;
+  font-family: 'Inter', Arial, sans-serif;
+    font-weight: bold;
+    color: #000000;
+   line-height: 2rem;
+   font-weight: 700;
+   letter-spacing: -0.025em;
+   
+   
+}
+.introduction-text {
+  margin-top: 15px;
+  font-size: 1rem;
+    color: #555555;
+    line-height: 1.6;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.secondTitle-container {
+  text-align: center; /* Teks di sebelah kiri */
+    max-width: 700px; /* Batasi lebar agar tidak terlalu melebar */
+    margin: 33px 0 0 0; /* Reset margin kanan dan kiri */
+    padding: 25px;
+}
+
+.secondTitle {
+  font-size: 2rem;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#86D662, #61AFBC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 .parent-container {
