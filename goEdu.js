@@ -1,14 +1,15 @@
-const indicator = document.querySelector('.indicator');
+ const indicator = document.querySelector('.indicator');
 const items = document.querySelectorAll('.nav-item');
 const contentContainer = document.getElementById('content-container');
 
 const contentData = {
     home: `
         <div class="hero-container">
-            <h1 class="hero-title">Selamat datang di goEdu</h1>
+            <h1 class="hero-title">Selamat datang, di goEdu</h1>
             <p class="hero-text">Website seputar Bahasa Indonesia!</p>
         </div>
-         <div class="introduction-container">
+        
+        <div class="introduction-container">
         <h3 class="introduction-title">Apa itu GoEdu?</h3>
         <p class="introduction-text">GoEdu adalah Website Tips Belajar Bahasa Indonesia. Tujuan Utama kami menciptakan GoEdu hadir untuk membantu pelajar dan siapa saja yang ingin meningkatkan kemampuan Bahasa Indonesia dengan cara yang mudah, cepat, dan efektif.</p>
         </div>
@@ -20,10 +21,9 @@ const contentData = {
     forum: `
         <div class="hero-container">
             <h1 class="hero-title">Forum Diskusi</h1>
-            <p class="hero-text">Diskusikan materi pelajaran dengan temanmu! </p>
+            <p class="hero-text">Diskusikan materi pelajaran dengan temanmu!</p>
         </div>
-
-          
+    
     `,
     latihan: `
         <div class="hero-container">
@@ -141,6 +141,7 @@ const contentData = {
                 </ul>
             </div>
         </div>
+    
     `
 };
 
@@ -150,8 +151,8 @@ const handleIndicator = (element) => {
         item.removeAttribute('style');
     });
 
-    indicator.style.width = `$(element.offsetWidth)px`;
-    indicator.style.left = `$(element.offsetLeft)px`;
+    indicator.style.width = `${element.offsetWidth}px`;
+    indicator.style.left = `${element.offsetLeft}px`;
     indicator.style.backgroundColor = element.getAttribute('active-color');
 
     element.classList.add('active');
@@ -161,11 +162,17 @@ const handleIndicator = (element) => {
     if (contentData[selectedContent]) {
         contentContainer.innerHTML = contentData[selectedContent];
 
-        setTimeout(() => {
-            document.querySelectorAll('.glassmorph').forEach(el => {
-                observer.observe(el);
-            });
-        }, 100);
+        if (selectedContent !== 'forum') {
+            // Hanya tambahkan animasi fade-in ke selain forum
+            setTimeout(() => {
+                document.querySelectorAll('.glassmorph').forEach(el => {
+                    observer.observe(el);
+                });
+            }, 100);
+        } else {
+            // Jika halaman forum, jalankan event listener untuk form
+            setupForumForm();
+        }
     }
 };
 
@@ -180,7 +187,7 @@ items.forEach((item) => {
     }
 });
 
-// Intersection Observer untuk animasi fade-in
+// Intersection Observer untuk animasi fade-in (kecuali Forum)
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
