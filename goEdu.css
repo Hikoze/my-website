@@ -38,8 +38,7 @@ body {
   backdrop-filter: blur(20px);
 }
 
-
-
+  
 .tips-A {
   font-family: 'inter', Helvetica, sans-serif;
   text-align: center;
@@ -204,7 +203,16 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-introduction-container {
+
+
+
+.parent-container {
+    display: flex;
+    justify-content: center; /* Pastikan elemen anak berada di kiri */
+    z-index: 600;
+}
+
+.introduction-container {
   text-align: center; /* Teks di sebelah kiri */
     max-width: 700px; /* Batasi lebar agar tidak terlalu melebar */
     margin: 4px 0 0 0; /* Reset margin kanan dan kiri */
@@ -245,18 +253,10 @@ introduction-container {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-
-.parent-container {
-    display: flex;
-    justify-content: center; /* Pastikan elemen anak berada di kiri */
-    z-index: 600;
-}
-
 .hero-container {
     text-align: center; /* Teks di sebelah kiri */
     max-width: 700px; /* Batasi lebar agar tidak terlalu melebar */
-    margin: 33px 0 0 0; /* Reset margin kanan dan kiri */
+    margin: 23px 0 0 0; /* Reset margin kanan dan kiri */
     padding: 25px;
 }
 
@@ -269,7 +269,7 @@ introduction-container {
 
 .hero-text {
     font-size: 1rem;
-    color: #555;
+    color: #555555;
     line-height: 1.6;
 }
 
@@ -317,6 +317,8 @@ nav {
     transition: 0.4s;
     border-radius: 0 0 8px 8px;
 }
+  
+
 
 /* From Uiverse.io by Dennyhml */ 
 .bub-container {
@@ -447,4 +449,4 @@ nav {
     .card {
         width: calc(33.33% - 20px);
     }
-    }
+}
