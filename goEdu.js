@@ -23,15 +23,7 @@ const contentData = {
             <p class="hero-text">Diskusikan materi pelajaran dengan temanmu! </p>
         </div>
 
-          <form id="questionForm">
-        <label for="name">Nama:</label>
-        <input type="text" id="name" required><br><br>
-
-        <label for="question">Pertanyaan:</label>
-        <textarea id="question" required></textarea><br><br>
-
-        <button type="submit">Kirim</button>
-    </form>
+          
     `,
     latihan: `
         <div class="hero-container">
