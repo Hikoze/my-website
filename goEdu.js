@@ -8,6 +8,14 @@ const contentData = {
             <h1 class="hero-title">Selamat datang di goEdu</h1>
             <p class="hero-text">Website seputar Bahasa Indonesia!</p>
         </div>
+         <div class="introduction-container">
+        <h3 class="introduction-title">Apa itu GoEdu?</h3>
+        <p class="introduction-text">GoEdu adalah Website Tips Belajar Bahasa Indonesia. Tujuan Utama kami menciptakan GoEdu hadir untuk membantu pelajar dan siapa saja yang ingin meningkatkan kemampuan Bahasa Indonesia dengan cara yang mudah, cepat, dan efektif.</p>
+        </div>
+        
+        <div class="secondTitle-container">
+        <h3 class="secondTitle">Dengan GoEdu, belajar Bahasa Indonesia jadi lebih menyenangkan dan tanpa ribet.</h3>
+        </div>
     `,
     forum: `
         <div class="hero-container">
