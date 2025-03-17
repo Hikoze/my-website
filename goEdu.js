@@ -1,4 +1,4 @@
- const indicator = document.querySelector('.indicator');
+const indicator = document.querySelector('.indicator');
 const items = document.querySelectorAll('.nav-item');
 const contentContainer = document.getElementById('content-container');
 
@@ -14,14 +14,52 @@ const contentData = {
         <p class="introduction-text">GoEdu adalah Website Tips Belajar Bahasa Indonesia. Tujuan Utama kami menciptakan GoEdu hadir untuk membantu pelajar dan siapa saja yang ingin meningkatkan kemampuan Bahasa Indonesia dengan cara yang mudah, cepat, dan efektif.</p>
         </div>
         
+         <div class="introduction-container">
+        <h3 class="introduction-title">Kapan GoEdu dibuat?</h3>
+        <p class="introduction-text">GoEdu pertama kali dibuat dan dirancang pada Minggu 9 Maret 2025. Dibandingkan dengan GoEdu yang dulu, GoEdu sekarang memiliki fitur dan tampilan yang sedikit berbeda. Berikut adalah tampilan versi dulu.</p>
+        </div>
+        <div class ="img-container">
+        <img class="screenshot" src="screenshot.jpg">
+        </div>
+        
+      
+        
+         <div class="introduction-container">
+        <h3 class="introduction-title">Teknologi Apa Yang Dipakai Oleh GoEdu? </h3>
+        <p class="introduction-text">GoEdu membuat Frontend di antaranya menggunakan HTML, CSS, JavaScript. Dan kami menggunakan Back-end Node.js untuk Forum pertanyaan yang berada di page terpisah.</p>
+        </div>
+        
+        <div class="container">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" class="icon">
+            <h2>HTML</h2>
+            <p>Kami menggunakan html untuk membuat struktur konten web.</p>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo" class="icon">
+            <h2>CSS</h2>
+            <p>Untuk mendesain struktur & objek, kami pilih CSS.</p>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="icon">
+            <h2>JavaScript</h2>
+            <p>Agar objek interaktif, kami menggunakan JavaScript.</p>
+        </div>
+    </div>
+        
+         <div class="introduction-container">
+        <h3 class="introduction-title">Pesan kami.</h3>
+        <p class="introduction-text">Kami hanya bisa berpesan, tetaplah semangat dalam belajar dan terus berkembang. Jangan pernah ragu untuk mencoba hal baru, karena setiap langkah kecil yang kamu ambil hari ini akan membawamu lebih dekat ke impianmu. Teruslah berusaha, hadapi tantangan dengan keberanian, dan jadilah versi terbaik dari dirimu sendiri! -Tim GoEdu.</p>
+        </div>
         <div class="secondTitle-container">
         <h3 class="secondTitle">Dengan GoEdu, belajar Bahasa Indonesia jadi lebih menyenangkan dan tanpa ribet.</h3>
         </div>
+      
     `,
     forum: `
         <div class="hero-container">
             <h1 class="hero-title">Forum Diskusi</h1>
-            <p class="hero-text">Diskusikan materi pelajaran dengan temanmu!</p>
+            <p class="hero-text">Untuk menanyakan seputar Bahasa Indonesia, gunakan link di bawah ini! </p>
         </div>
     
     `,
