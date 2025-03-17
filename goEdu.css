@@ -179,7 +179,7 @@ body {
 }
 .glassmorph {
   position: center;
-  width: auto;
+  width: aut;
   height: 220px;
   border: 0.5px solid rgba(0, 0, 0, 1);
   border-radius: 15px;
@@ -215,8 +215,8 @@ body {
 .introduction-container {
   text-align: center; /* Teks di sebelah kiri */
     max-width: 700px; /* Batasi lebar agar tidak terlalu melebar */
-    margin: 4px 0 0 0; /* Reset margin kanan dan kiri */
-    padding: 25px;
+    margin: 20px auto; /* Reset margin kanan dan kiri */
+    padding: 25px 25px 15px 25px;
 }
 
 .introduction-title {
@@ -238,25 +238,97 @@ body {
     font-family: 'Inter', Arial, sans-serif;
 }
 
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%; /* Mengisi lebar container */
+  max-width: 690px; /* Maksimum ukuran gambar */
+  margin: 20px auto; /* Tengah dengan margin otomatis */
+  
+  border-radius: 15px;
+  background: linear-gradient(135deg, #c1dbfa, #a6d6e8);
+  backdrop-filter: blur(10px);
+  z-index: 500;
+  overflow: hidden; /* Mencegah elemen keluar dari container */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.screenshot {
+  width: 90%; /* Gambar akan mengisi container */
+  height: auto; /* Menjaga proporsi */
+  max-width: 690px; /* Maksimum ukuran gambar */
+  padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Align cards in a row */
+    justify-content: flex-start; /* Align cards to the right */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    padding: 20px;
+    background: linear-gradient(162deg, 
+                rgba(193, 219, 250, 0.5) 0%, 
+                rgba(166, 214, 232, 0.5) 48%, 
+                rgba(215, 235, 255, 1) 100%);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    margin: 20px auto;
+    margin-top: 30px;
+    width: 90%;
+    max-width: 690px;
+}
+
+.card {
+  background-color: white;
+    height: 200px; /* Fixed height */
+    width: 170px; /* Fixed width */
+    margin: 10px; /* Space between cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text */
+    max-width: 170px;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.icon {
+    width: 40px; /* Icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack cards vertically on small screens */
+        align-items: center; /* Center cards */
+    }
+}
+
 .secondTitle-container {
   text-align: center; /* Teks di sebelah kiri */
-    max-width: 700px; /* Batasi lebar agar tidak terlalu melebar */
+     /* Batasi lebar agar tidak terlalu melebar */
     margin: 33px 0 0 0; /* Reset margin kanan dan kiri */
     padding: 25px;
+    width: 100%;
+    background: linear-gradient(135deg, #c1dbfa, #a6d6e8)
 }
 
 .secondTitle {
-  font-size: 2rem;
+  font-size: 1rem;
     font-family: 'Inter', Arial, sans-serif;
     font-weight: bold;
-    background: -webkit-linear-gradient(#86D662, #61AFBC);
+    background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .hero-container {
     text-align: center; /* Teks di sebelah kiri */
     max-width: 700px; /* Batasi lebar agar tidak terlalu melebar */
-    margin: 23px 0 0 0; /* Reset margin kanan dan kiri */
+    margin: 20px auto; /* Reset margin kanan dan kiri */
     padding: 25px;
 }
 
